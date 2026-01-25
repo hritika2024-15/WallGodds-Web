@@ -1,3 +1,5 @@
+// This code is here for reference
+
 import React, { useState } from "react";
 import Save from "/Save.svg";
 import SaveFilled from "/Save-filled.svg";
@@ -12,7 +14,11 @@ const ImgCard = ({ imageSrc }) => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isLiked, setIsLiked] = useState(false);
     const [isSaved, setIsSaved] = useState(false);
-    const [toast, setToast] = useState({ show: false, message: '', type: 'success' });
+    const [toast, setToast] = useState({
+        show: false,
+        message: "",
+        type: "success",
+    });
 
     const handleDownloadClick = () => {
         setIsPopupOpen(true);
@@ -26,8 +32,10 @@ const ImgCard = ({ imageSrc }) => {
         setIsLiked(!isLiked);
         setToast({
             show: true,
-            message: !isLiked ? 'Wallpaper added to favorites!' : 'Wallpaper removed from favorites!',
-            type: 'success'
+            message: !isLiked
+                ? "Wallpaper added to favorites!"
+                : "Wallpaper removed from favorites!",
+            type: "success",
         });
     };
 
@@ -35,8 +43,10 @@ const ImgCard = ({ imageSrc }) => {
         setIsSaved(!isSaved);
         setToast({
             show: true,
-            message: !isSaved ? 'Wallpaper saved to collection!' : 'Wallpaper removed from collection!',
-            type: 'success'
+            message: !isSaved
+                ? "Wallpaper saved to collection!"
+                : "Wallpaper removed from collection!",
+            type: "success",
         });
     };
 
@@ -47,16 +57,16 @@ const ImgCard = ({ imageSrc }) => {
     return (
         <div className={Style.imgCard}>
             <div className={Style.icons}>
-                <img 
-                    src={isSaved ? SaveFilled : Save} 
-                    alt="Save" 
-                    className={`${Style.icon} ${isSaved ? Style.saved : ''}`}
+                <img
+                    src={isSaved ? SaveFilled : Save}
+                    alt="Save"
+                    className={`${Style.icon} ${isSaved ? Style.saved : ""}`}
                     onClick={handleSaveClick}
                 />
-                <img 
-                    src={isLiked ? HeartFilled : Heart} 
-                    alt="Heart" 
-                    className={`${Style.icon} ${isLiked ? Style.liked : ''}`}
+                <img
+                    src={isLiked ? HeartFilled : Heart}
+                    alt="Heart"
+                    className={`${Style.icon} ${isLiked ? Style.liked : ""}`}
                     onClick={handleLikeClick}
                 />
             </div>
@@ -74,7 +84,7 @@ const ImgCard = ({ imageSrc }) => {
                     />
                 </div>
             </div>
-            
+
             <Popup
                 isOpen={isPopupOpen}
                 onClose={closePopup}

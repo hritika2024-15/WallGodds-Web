@@ -1,6 +1,6 @@
-import Styles from "./SignUp.module.css";
+import Styles from "./Error404.module.css";
 
-const SignUp = () => {
+const Error404 = () => {
     return (
         <>
             <div className={Styles.container}>
@@ -32,4 +32,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default Error404;

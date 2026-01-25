@@ -1,3 +1,5 @@
+// This code is here for reference
+
 import React, { useState } from "react";
 import Style from "./ImgCard.module.css";
 import { LiaDownloadSolid } from "react-icons/lia";
@@ -13,7 +15,11 @@ const ImgCard = ({ imageSrc, username = "@ImgUser1" }) => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isLiked, setIsLiked] = useState(false);
     const [isSaved, setIsSaved] = useState(false);
-    const [toast, setToast] = useState({ show: false, message: '', type: 'success' });
+    const [toast, setToast] = useState({
+        show: false,
+        message: "",
+        type: "success",
+    });
 
     const handleDownloadClick = () => {
         setIsPopupOpen(true);
@@ -27,8 +33,10 @@ const ImgCard = ({ imageSrc, username = "@ImgUser1" }) => {
         setIsLiked(!isLiked);
         setToast({
             show: true,
-            message: !isLiked ? 'Wallpaper added to favorites!' : 'Wallpaper removed from favorites!',
-            type: 'success'
+            message: !isLiked
+                ? "Wallpaper added to favorites!"
+                : "Wallpaper removed from favorites!",
+            type: "success",
         });
     };
 
@@ -36,8 +44,10 @@ const ImgCard = ({ imageSrc, username = "@ImgUser1" }) => {
         setIsSaved(!isSaved);
         setToast({
             show: true,
-            message: !isSaved ? 'Wallpaper saved to collection!' : 'Wallpaper removed from collection!',
-            type: 'success'
+            message: !isSaved
+                ? "Wallpaper saved to collection!"
+                : "Wallpaper removed from collection!",
+            type: "success",
         });
     };
 
@@ -52,16 +62,16 @@ const ImgCard = ({ imageSrc, username = "@ImgUser1" }) => {
                 <img src={imageSrc} alt="Wallpaper" className={Style.image} />
 
                 {/* Left (Bookmark) & Right (Heart) Overlay Icons */}
-                <img 
-                    src={isSaved ? SaveFilled : Save} 
-                    alt="Save" 
-                    className={`${Style.icon} ${Style.bookmarkIcon} ${isSaved ? Style.saved : ''}`}
+                <img
+                    src={isSaved ? SaveFilled : Save}
+                    alt="Save"
+                    className={`${Style.icon} ${Style.bookmarkIcon} ${isSaved ? Style.saved : ""}`}
                     onClick={handleSaveClick}
                 />
-                <img 
-                    src={isLiked ? HeartFilled : Heart} 
-                    alt="Heart" 
-                    className={`${Style.icon} ${Style.heartIcon} ${isLiked ? Style.liked : ''}`}
+                <img
+                    src={isLiked ? HeartFilled : Heart}
+                    alt="Heart"
+                    className={`${Style.icon} ${Style.heartIcon} ${isLiked ? Style.liked : ""}`}
                     onClick={handleLikeClick}
                 />
 
@@ -71,19 +81,24 @@ const ImgCard = ({ imageSrc, username = "@ImgUser1" }) => {
                 {/* Username + Download Button in Bottom Overlay (ONLY for Mobile) */}
                 <div className={Style.bottomOverlay}>
                     <span>{username}</span>
-                    <button className={Style.downloadBtn} onClick={handleDownloadClick}>
-                        Download <LiaDownloadSolid className={Style.downloadIcon} />
+                    <button
+                        className={Style.downloadBtn}
+                        onClick={handleDownloadClick}>
+                        Download{" "}
+                        <LiaDownloadSolid className={Style.downloadIcon} />
                     </button>
                 </div>
             </div>
 
             {/* Download Button BELOW image (ONLY for Large Screens) */}
             <div className={Style.downloadBar}>
-                <button className={Style.downloadBtn} onClick={handleDownloadClick}>
+                <button
+                    className={Style.downloadBtn}
+                    onClick={handleDownloadClick}>
                     Download <LiaDownloadSolid className={Style.downloadIcon} />
                 </button>
             </div>
-            
+
             <Popup
                 isOpen={isPopupOpen}
                 onClose={closePopup}
