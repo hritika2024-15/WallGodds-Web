@@ -1,6 +1,6 @@
 import Styles from "./Error404.module.css";
 import { Link } from "react-router-dom";
-import ErrorSvg from "./Error404Assests/Error404.svg";
+import ErrorSvg from "/Error404.svg";
 
 const Error404 = () => {
   return (

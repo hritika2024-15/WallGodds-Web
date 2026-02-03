@@ -17,6 +17,7 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .content {
@@ -44,23 +45,24 @@
 }
 
 .homeButton {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: #5f71fe;
   color: white;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.65rem 2.2rem;
+  font-family: "Gued", "Poppins", sans-serif;
+  font-size: clamp(1rem, 1.2vw + 0.5rem, 1.125rem);
+  font-weight: 400;
+  padding: 0.75rem 2.2rem;
   border-radius: 10px;
   backdrop-filter: blur(4px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(95, 113, 254, 0.3);
   border: none;
   cursor: pointer;
   white-space: nowrap;
+  line-height: 1;
+  text-align: center;
 }
 
 .homeButton:hover {
@@ -77,17 +79,16 @@
 }
 
 @media (max-width: 768px) {
+  .homeButton {
+    padding: 0.45rem 1.5rem;
+  }
+
   .content {
     gap: 2.5rem;
   }
 
   .illustration {
     max-width: 300px;
-  }
-
-  .homeButton {
-    padding: 0.6rem 2rem;
-    font-size: 0.8125rem;
   }
 }
 
