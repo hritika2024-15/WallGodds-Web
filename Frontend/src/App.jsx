@@ -8,7 +8,7 @@ import SignUp from "./Components/AuthModule/SignUpModule/SignUp";
 import Profile from "./Components/ProfileModule/Profile";
 import Error404 from "./Components/CommonModule/ErrorModule/Error404";
 
-// Vercel Analytics & Speed Insights [Do not remove]
+// Vercel Analytics & Speed Insights [Don't remove]
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
