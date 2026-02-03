@@ -1,7 +1,7 @@
 import Styles from "./Footer.module.css";
 
 export const Footer = () => {
-
+    // Social Links
     const socialLinks = [
         {name: "Email", url: "mailto:wallgodds@gmail.com", path: '/socialLinks/Mail.svg'},
         {name: "GitHub", url: "https://github.com/WallGodds", path: '/socialLinks/GitHub.svg'},

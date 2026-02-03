@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Gued";
+    src:
+        url("/fonts/gued.bold.woff2") format("woff2"),
+        url("/fonts/gued.bold.woff") format("woff"),
+        url("/fonts/gued.bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .footer {
     display: flex;
     width: 75.9375rem;
@@ -35,14 +46,9 @@
     background-position: center;
 }
 
-:global(.dark-theme) .logoBox {
-    background-image: url('/footer_icon_light.svg');
-}
-
 .footerText {
-    font-family: Gued;
-    font-size: 1.46644rem;
     font-weight: 500;
+    font-size: 1.46644rem;
     color: #0f172a;
 }
 
@@ -65,14 +71,4 @@
     border: 1px solid #303030;
     transition: all 0.2s ease;
     font-size: 1.7rem;
-}
-
-:global(.dark-theme) .footerText {
-    color: #e5e7eb;
-}
-
-:global(.dark-theme) .iconBtn {
-    background: #303030;
-    border-color: #303030;
-    color: #e5e7eb;
 }
