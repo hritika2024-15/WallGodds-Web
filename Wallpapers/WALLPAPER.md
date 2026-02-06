@@ -178,6 +178,87 @@ Category: Desktop
 - **Designer**: Pritha Pal
 - **Category**: Desktop
 
+## 23.nithyashreea-160-1.png
+- **Title**: Cozy Cat
+- **Description**: A soft pastel illustration created by me featuring a relaxed cat with gentle decorative elements, designed to give a calm and cozy visual experience optimized for tablet screens.
+- **Designer**: Nithya Shree A
+- **Category**: Tablet
+
+## 24.nithyashreea-160-2.jpeg
+- **Title**: Pink Bloom
+- **Description**: A photograph personally captured by me showcasing delicate pink flowers and natural foliage, offering a peaceful and refreshing wallpaper optimized for tablet displays.
+- **Designer**: Nithya Shree A
+- **Category**: Tablet
+
+## 25.nithyashreea-160-3.jpg
+- **Title**: Twin Swans (Sky Blue)
+- **Description**: A minimalistic illustration created by me featuring two symmetrical swans on a soft blue background, emphasizing balance, negative space, and visual calm suitable for desktop use.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 26.nithyashreea-160-4.jpg
+- **Title**: Twin Swans (Coral)
+- **Description**: A clean and minimal illustration created by me with mirrored swan forms on a coral background, using simple shapes and strong contrast for a warm yet uncluttered desktop wallpaper.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 27.nithyashreea-160-5.jpg
+- **Title**: Coastal Pattern
+- **Description**: A playful illustration created by me featuring seashells and starfish arranged in a repeating pattern, inspired by coastal elements and soft pastel tones for desktop backgrounds.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 28.nithyashreea-160-6.jpg
+- **Title**: Comfort Bowl
+- **Description**: A cheerful illustration created by me featuring a bowl of noodles with simple shapes and bright accents, designed as a light-hearted and fun desktop wallpaper.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 29.nithyashreea-160-7.jpg
+- **Title**: Soft Florals
+- **Description**: A gentle floral illustration created by me using muted tones and clean line work, forming a balanced and elegant desktop wallpaper with a calm visual feel.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 30.nithyashreea-160-8.jpg
+- **Title**: Twin Swans (Sun Yellow)
+- **Description**: A minimalistic illustration created by me featuring symmetrical swans on a warm yellow background, focusing on simplicity, symmetry, and clean composition for desktop screens.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 31.nithyashreea-160-9.jpg
+- **Title**: Lavender Pattern
+- **Description**: A soft pastel floral illustration created by me using repeating elements and light colors, designed to create a cheerful yet calm desktop wallpaper.
+- **Designer**: Nithya Shree A
+- **Category**: Desktop
+
+## 32.nithyashreea-160-10.jpeg
+- **Title**: Purple Bloom
+- **Description**: A minimal floral illustration created by me featuring a single purple flower with subtle decorative borders, designed to provide an elegant and calm visual experience for mobile screens.
+- **Designer**: Nithya Shree A
+- **Category**: Mobile
+
+## 33.nithyashreea-160-11.jpeg
+- **Title**: Line Art Florals
+- **Description**: A monochrome line-art illustration created by me combining floral elements and butterflies, focusing on simplicity and clean composition optimized for mobile wallpaper use.
+- **Designer**: Nithya Shree A
+- **Category**: Mobile
+
+## 34.nithyashreea-160-12.jpeg
+- **Title**: Soft Blossom
+- **Description**: A gentle floral illustration created by me featuring soft pink blossoms on a pastel background, designed to give a light and soothing appearance on mobile devices.
+- **Designer**: Nithya Shree A
+- **Category**: Mobile
+
+
+
+
+
+
+
+
+
+
 
 WallGodds values creativity and collaboration. We can't wait to see your contributions! If you have any questions or need help, feel free to connect with our community on [Discord](https://discord.gg/kTQ5KWANp8).  
 
