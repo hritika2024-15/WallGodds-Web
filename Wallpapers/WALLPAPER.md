@@ -285,14 +285,47 @@ Category: Desktop
 - **Designer**: Nithya Shree A
 - **Category**: Mobile
 
+## 35. [sahithya]_[stay_focused].png
+- **Title**: Stay Focused
+- **Description**: A soft pink minimal wallpaper featuring gentle heart blur elements and calming typography, designed to encourage focus and quiet motivation without visual clutter.
+- **Designer**: Sahithya
+- **Category**: Desktop
 
+## 36. [sahithya]_[mate].png
+- **Title**: We Got This
+- **Description**: A calming blue-toned wallpaper with hand-drawn elements symbolizing support, reassurance, and togetherness — reminding us that challenges are easier when faced together.
+- **Designer**: Sahithya
+- **Category**: Desktop
 
+## 37. [sahithya]_[playlist].png
+- **Title**: My Playlist Against Everything
+- **Description**: A bold and expressive wallpaper inspired by music culture, using retro visuals and strong colors to represent music as motivation, escape, and emotional strength.
+- **Designer**: Sahithya 
+- **Category**: Desktop
 
+## 38. [sahithya]_[sakura].png
+- **Title**: Sakura Reflections
+- **Description**: Inspired by cherry blossoms and quiet reflection, this wallpaper blends soft illustrations and thoughtful text to evoke calmness, balance, and introspection.
+- **Designer**: Sahithya 
+- **Category**: Desktop
 
+## 39. [sahithya]_[luckiest_girl].png
+- **Title**: The Luckiest Girl
+- **Description**: A minimal dark-themed mobile wallpaper with subtle heart accents, expressing gratitude, self-belief, and emotional warmth through simplicity.
+- **Designer**: Sahithya 
+- **Category**: Mobile
 
+## 40. [sahithya]_[luckiest_human].png
+- **Title**: My Loveliest Human
+- **Description**: A calm and intimate mobile wallpaper designed with muted tones and soft typography, celebrating meaningful human connections and emotional closeness.
+- **Designer**: Sahithya 
+- **Category**: Mobile
 
-
-
+## 41. [sahithya]_[vision].png
+- **Title**: Trust Your Vision
+- **Description**: A dreamy mobile wallpaper featuring gentle illustrations and motivational text, encouraging confidence in personal goals, creativity, and inner vision.
+- **Designer**: Sahithya 
+- **Category**: Mobile
 
 
 WallGodds values creativity and collaboration. We can't wait to see your contributions! If you have any questions or need help, feel free to connect with our community on [Discord](https://discord.gg/kTQ5KWANp8).  
