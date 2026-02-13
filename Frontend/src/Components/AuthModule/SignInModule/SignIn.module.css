@@ -1,198 +1,384 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Setup Gued Font */
+@font-face {
+    font-family: "Gued";
+    src: url("/fonts/gued.regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Main Container */
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  justify-content: center;
-  background-image: url('/Light_mode_bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Full viewport height with scrolling enabled */
+    height: 100vh;
+    overflow-y: auto;
+    
+    /* Padding to ensure content doesn't touch edges on small screens */
+    padding: 2rem 0;
+    
+    box-sizing: border-box;
+    background-image: url('/Light_mode_bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
-.signInCard {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 30px 40px;  /* Reduced from 48px to 30px top padding */
-  max-width: 440px;
-  width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-border: 2px dashed rgba(128, 128, 128, 0.25);
+/* Pseudo-elements for correct vertical centering + scrolling behavior */
+.container::before {
+    content: '';
+    flex: 1;
+    min-height: 0;
 }
 
+.container::after {
+    content: '';
+    flex: 1;
+    min-height: 0;
+}
+
+/* Header Container */
+.headerContainer {
+     text-align: center;
+    margin-bottom: 2rem;
+    flex-shrink: 0; 
+}
+
+
+/* Title - Sign In */
 .title {
-  font-size: 32px;
-   font-family: "Gued", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 0 8px 0;
+    color: #FFF;
+    font-family: "Gued", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.5px;
 }
 
+/* Subtitle */
 .subtitle {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  margin: 0 0 32px 0;
-  font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
 }
 
+/* Main Card Container */
+.signInCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* EXACT Dimensions from Figma */
+    width: 541px;
+    height: 555px;
+    overflow: hidden;
+    border-radius: 14.83px;
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    
+    background-color: rgba(255, 255, 255, 0.54);
+    backdrop-filter: blur(12px);
+    
+    /* Card Border: 1px dashed #7e93d6 with rounded dashes (6, 6) */
+    background-image: url("data:image/svg+xml,%3csvg width='541' height='555' viewBox='0 0 541 555' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='540' height='554' rx='14.83' ry='14.83' fill='none' stroke='%237e93d6' stroke-width='1' stroke-dasharray='6%2c 6' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    
+    border: none;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Card Content Wrapper */
+.cardContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Social Buttons Container */
 .socialButtons {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 10px;
-  margin-top: 17px;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
 }
 
+/* Individual Social Button */
 .socialButton {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;                 
-  padding: 1px 10px;        
-  background: white;
-border: 2px dashed rgba(128, 128, 128, 0.25);
-  border-radius: 6px;
-  font-size: 13px;
-  color: #555;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    
+    /* Exact dimensions */
+    width: 142px;
+    height: 40px;
+    padding: 0;
+    
+    /* SVG Border: 3, 3 dashed stroke */
+    background-image: url("data:image/svg+xml,%3csvg width='142' height='40' viewBox='0 0 142 40' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='141' height='39' rx='10' ry='10' fill='none' stroke='%23798ed5' stroke-width='1' stroke-dasharray='3%2c 3' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    
+    border: none;
+    background-color: rgba(230, 240, 255, 0.15);
+    border-radius: 10px;
+    color: #555555;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
-
 
 .socialButton:hover {
-  border-color: #5b8def;
-  background: #f8fbff;
+    background-color: rgba(230, 240, 255, 0.3);
 }
 
+/* Icon inside social buttons */
 .icon {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
+/* OR Divider */
 .divider {
-  text-align: center;
- margin-bottom: 11px;
-  margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.75rem 0;
 }
 
 .divider span {
-  color: #999;
-  font-size: 14px;
+    color: #555555;
+    font-size: 0.75rem;
+    font-weight: 300;
 }
+
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    width: 449px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Field wrapper for inputs */
+.field {
+    position: relative;
+    margin-bottom: 20px; /* Space between input fields (74px total with input height) */
+}
+
+.field:first-of-type {
+    margin-top: 11.5px; /* Space from divider to first input */
+}
+
+/* Input Group */
 .inputGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
 }
 
+/* Label */
 .label {
-  font-size: 13px;
-  color: #666;
-  font-weight: 400;
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 .required {
-  color: #ff4444;
+    color: #ff917e;
 }
 
+/* Show asterisk by default */
+.requiredem{
+ position: absolute;
+    top: 10px;
+    right: 379px;
+    color: #ff917e;
+    font-size: 18px;
+    pointer-events: none; /* So it doesn't interfere with clicking */
+    transition: opacity 0.2s ease;
+}
+
+
+.requiredp {
+    position: absolute;
+    top: 10px;
+    right: 350px;
+    color: #ff917e;
+    font-size: 18px;
+    pointer-events: none; /* So it doesn't interfere with clicking */
+    transition: opacity 0.2s ease;
+}
+
+/* Hide asterisk when input has value or is focused */
+.input:focus ~ .requiredem,
+.input:not(:placeholder-shown) ~ .requiredem,
+.input:focus ~ .requiredp,
+.input:not(:placeholder-shown) ~ .requiredp {
+    opacity: 0;
+}
+
+/* Input Fields */
 .input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #cfe3ff;
-  border-radius: 8px;
-  font-size: 14px;
-  color: #333;
-  background: #eaf3ff;   
-  transition: all 0.2s ease;
+    width: 449px;
+    height: 47px;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 0 16px;
+    background: #E2E8FF;
+    border: 2px solid transparent;
+    outline: none;
+    transition: border 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #606060;
+    box-sizing: border-box;
+}
+
+.input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #606060;
 }
 
 .input:focus {
-  outline: none;
-  border-color: #5b8def;
-  background: #dcecff;   
+    outline: none;
+    border-color: #798ed5;
+    background: #d8e2ff;
 }
 
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #E2E8FF inset !important;
+    box-shadow: 0 0 0 1000px #E2E8FF inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.error {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    background-color: #ff917e;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Forgot Password Link */
 .forgotPassword {
-  font-size: 13px;
-  color: #666;
-  text-decoration: none;
-  align-self: flex-end;
-  margin-top: -10px;   
-  margin-bottom: 10px;      
+    font-size: 14px;
+    color: #606060;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
-
 
 .forgotPassword:hover {
-  color: #5b8def;
+    color: #5F71FE;
+    text-decoration: underline;
 }
 
+/* Sign In Button */
 .signInButton {
-  padding: 5.5px 14px;   
-  background: #5b8def;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  margin-top: 92px; 
-   margin-bottom:25px;   
+    width: 446px;
+    height: 43px;
+    padding: 0;
+    background-color: #5F71FE;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 8rem; /* Different spacing for the button - larger gap */
 }
-
 
 .signInButton:hover {
-  background: #4a7cde;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(91, 141, 239, 0.3);
+    background: #4A5FE8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(95, 113, 254, 0.3);
 }
 
 .signInButton:active {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
+/* Sign Up Text */
 .signUpText {
-  text-align: center;
-  margin-top: 24px;
-  font-size: 14px;
-  color: #666;
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    flex-shrink: 0;
 }
 
 .signUpLink {
-  color: #5b8def;
-  text-decoration: none;
-  font-weight: 500;
+    color: #5D7BF5;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.3rem;
 }
 
 .signUpLink:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
-  .signInCard {
-    padding: 32px 24px;
-  }
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
 
-  .socialButtons {
-    flex-direction: column;
-  }
+    .title {
+        font-size: 1.8rem;
+    }
 
-  .socialButton {
-    width: 100%;
-  }
+    .signInCard {
+        width: 100%;
+        max-width: 541px;
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .socialButtons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .socialButton {
+        width: 100%;
+    }
 }
