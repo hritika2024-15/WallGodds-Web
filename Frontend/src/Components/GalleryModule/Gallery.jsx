@@ -23,16 +23,20 @@ import Spiritual from "./categorieItems/Spiritual.svg";
 import Music from "./categorieItems/Music.svg";
 import AIGen from "./categorieItems/AIGen.svg";
 
+import Mobile from "./MobileSection/Mobile";
+import Tablet from "./TabletSection/Tablet";
 import Desktop from "./DesktopSection/Desktop";
 
-import Mobile from "./MobileSection/Mobile";
-
-import Tablet from "./TabletSection/Tablet";
-
-import Styles from "./Gallery.module.css";
 import NavBar from "../CommonModule/NavBarModule/NavBar";
 import Footer from "../CommonModule/FooterModule/Footer";
 
+import Styles from "./Gallery.module.css";
+
+// const devices = [
+//   { id: "tablet", icon: TabletIcon, route: "/gallery/tablet" },
+//   { id: "desktop", icon: LaptopIcon, route: "/gallery/desktop" },
+//   { id: "mobile", icon: MobileIcon, route: "/gallery/mobile" },
+// ];
 
 const categories = [
   { title: "Abstract", image: Abstract },
@@ -147,6 +151,7 @@ const Gallery = () => {
         </div>
 
         <div className={Styles.temp}>
+          {/* Categories */}
           <div
             ref={sliderRef}
             className={Styles.scrollItems}
@@ -167,16 +172,18 @@ const Gallery = () => {
           </div>
         </div>
 
-        {activeDevice === "desktop" && <Desktop />}
-        {activeDevice === "mobile" && <Mobile />}
-        <Routes>
-          <Route path="desktop" element={<Desktop />} />
-          <Route path="tablet" element={<Tablet />} />
-        </Routes>
+        <div className={Styles.galleryScrollArea}>
+          {activeDevice === "mobile" && <Mobile />}
+          
+          <Routes>
+            <Route path="desktop" element={<Desktop />} />
+            <Route path="tablet" element={<Tablet />} />
+          </Routes>
 
-        <div className={Styles.footerWrapper}>
-          <Footer />
-        </div>
+          <div className={Styles.footerWrapper}>
+            <Footer />
+          </div>
+        </div> 
       </div>
     </>
   );
